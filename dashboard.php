@@ -12,7 +12,16 @@
 
 <body>
 
-
+<?php
+    session_start();
+    if( !isset($_SESSION['username'])){
+        header( "refresh:5;url=index.php");
+    }
+    else{
+        die( "Acesso restrito.");
+    }
+?>
+    <div class="dashboard">
     <nav class="navbar navbar-expand-sm bg-light">
         <div class="container-fluid">
             <ul class="navbar-nav">
@@ -120,11 +129,11 @@
                     </tbody>
                 </table>
             </div>
-
-
         </section>
 
     </main>
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

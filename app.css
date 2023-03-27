@@ -4,16 +4,31 @@ body{
     box-sizing: border-box;
 }
 
-.card{
+.dashboard .card{
     margin-top: 20px;
 }
 
-.card .card-header.sensor{
+.dashboard  .card .card-header.sensor{
     background-color: #93baff;   
 }
 
 
-.card .card-header.atuador{
+.dashboard  .card .card-header.atuador{
     background-color: #ffbf6c;   
 }   
+
+.login .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login img{
+    width: 300px;
+}
+
+.login .TIform{
+    width: 350px;
+    padding: 15px;
+}
 
